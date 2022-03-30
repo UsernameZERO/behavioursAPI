@@ -40,16 +40,16 @@ Now run the application
 npm start
 ```
 
-To view the behaviours
-
+-To view the behaviours
 - Use GET ---> Url/Api
-  To view selected behaviour
+
+-To view selected behaviour
 - Use GET ---> Url/Api/{SelectedBehaviour name}
-  To add a behaviour in a selected behaviour
+-To add a behaviour in a selected behaviour
 - Use POST ---> Url/Api/{SelectedBehaviour name}/add
-  To Edit the behaviour
+-To Edit the behaviour
 - Use PUT ---> Url/Api/{SelectedBehaviour name}/update/:id
-  To Delete a behaviour
+-To Delete a behaviour
 - Use DELETE ---> Url/Api/{SelectedBehaviour name}/:id
 
 ## Folder Structure
