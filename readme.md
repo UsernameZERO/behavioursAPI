@@ -41,16 +41,26 @@ npm start
 ```
 
 -To view the behaviours
+```bash
 - Use GET ---> Url/Api
+```
 
 -To view selected behaviour
+```bash
 - Use GET ---> Url/Api/{SelectedBehaviour name}
+```
 -To add a behaviour in a selected behaviour
+```bash
 - Use POST ---> Url/Api/{SelectedBehaviour name}/add
+```
 -To Edit the behaviour
+```bash
 - Use PUT ---> Url/Api/{SelectedBehaviour name}/update/:id
+```
 -To Delete a behaviour
+```bash
 - Use DELETE ---> Url/Api/{SelectedBehaviour name}/:id
+```
 
 ## Folder Structure
 
