@@ -18,7 +18,7 @@ router.put('/managing/update/:id', behaveController.updateMC);
 router.put('/driving/update/:id', behaveController.updateDR);
 //to delete the selected behavior
 router.delete('/decision/:id', behaveController.removeDecision);
-router.delete('thinking/:id', behaveController.removeTL);
+router.delete('/thinking/:id', behaveController.removeTL);
 router.delete('/influencing/:id', behaveController.removeIN);
 router.delete('/managing/:id', behaveController.removeManaging);
 router.delete('/driving/:id', behaveController.removeDriving);
