@@ -2,5 +2,5 @@ const express = require('express');
 const router = express.Router();
 
 
-router.use('/api', require('./Api'));
+router.use('/Api', require('./Api'));
 module.exports = router;
