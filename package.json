@@ -1,7 +1,7 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
+  "description": "to add the lists of behaviours",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
