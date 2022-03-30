@@ -338,3 +338,69 @@ module.exports.updateDR =  function(req, res){
         })
     })
 }
+
+//Display seperately
+module.exports.displayDecisions = async (req, res)=>{
+    let decisoin = await Decision.find({})
+    let md = decisoin.map((value)=>{
+        return {
+            id: value.id,
+            description: value.description,
+        }
+    })
+    return res.status(200).json({data: {behavioursList: {
+        Making_Decision: md,
+    }}});
+}
+
+module.exports.displayThinking = async (req, res)=>{
+    let thinking = await Thinking.find({})
+    let tL = thinking.map((value)=>{
+        return {
+            id: value.id,
+            description: value.description,
+        }
+    })
+    return res.status(200).json({data: {behavioursList: {
+        Thinking_Laterally: tL,
+    }}});
+}
+
+module.exports.displayInfluencing = async (req, res)=>{
+    let influencing = await Influencing.find({});
+    let iN = influencing.map((value)=>{
+        return {
+            id: value.id,
+            description: value.description,
+        }
+    })
+    return res.status(200).json({data: {behavioursList: {
+        Influencing_And_Negotiating: iN,
+    }}});
+}
+
+module.exports.displayManaging = async (req, res)=>{
+    let managing = await Managing.find({})
+    let mC = managing.map((value)=>{
+        return {
+            id: value.id,
+            description: value.description,
+        }
+    })
+    return res.status(200).json({data: {behavioursList: {
+        Managing_Conflicts: mC,
+    }}});
+}
+
+module.exports.displayDriving = async (req, res)=>{
+    let driving = await Driving.find({})
+    let dR = driving.map((value)=>{
+        return {
+            id: value.id,
+            description: value.description,
+        }
+    })
+    return res.status(200).json({data: {behavioursList: {
+        Driving_Results: dR,
+    }}});
+}

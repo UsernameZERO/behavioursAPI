@@ -22,5 +22,11 @@ router.delete('/thinking/:id', behaveController.removeTL);
 router.delete('/influencing/:id', behaveController.removeIN);
 router.delete('/managing/:id', behaveController.removeManaging);
 router.delete('/driving/:id', behaveController.removeDriving);
+// Display list in selected behaviours
+router.get('/decision', behaveController.displayDecisions);
+router.get('/thinking', behaveController.displayThinking);
+router.get('/influencing', behaveController.displayInfluencing);
+router.get('/managing', behaveController.displayManaging);
+router.get('/driving', behaveController.displayDriving);
 
 module.exports = router;
